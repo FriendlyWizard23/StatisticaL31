@@ -75,5 +75,65 @@ si può utilizzare una lista di valori booleani in cui True indica gli elementi 
   - Infine, il metodo `xticks` di matplotlib permette di specificare quali valori evidenziare sull'asse delle ascisse e quali etichette utilizzare.
 #### LOV VS ILOC
 
+# LEZIONE 4
+
+- Ripartizione Empirica -> Diagramma a scalini (Funzione costante a tratti)
+- CAMPIONE = insieme di dati su cui mi baso per le mie analisi statistiche
+    - Ripartizione Empirica ci permette di generare un grafico a scaletta. Prende anche il nome di Funzione di distribuzione cumulativa empirica
+
+- scegliere un campione in modo rappresentativo significa non fare "favoritismi". Non posso estrarre chi mi fa comodo, tutti devono avere la stessa chance di finire nel mio campione.
+
+## POSIZIONE E CENTRALITA
+### MEDIA CAMPIONARIA
+- calcolabile solamente per i dati **quantitativi**
+- mi permette di rappresentare qualcosa con un solo valore.
+- caratteristiche
+    - Non equivale spesso a nessuno dei valori che usiamo per calcolarla
+    - **Traslazione:** Se ho una media di alcuni valori X e poi devo calcolare la media di alcuni valori che sono x+a (traslazione) mi basta aggiungere a alla media calcolata prima. Viene mantenuta la traslazione
+    - **Scalabilità**: Stessa cosa vale per la scalabilità. 
+    - **Trasformazioni affini**: Stessa cosa vale per le trasformazioni affini.
+- queste proprietà sono utili, perche permettono di fare calcoli in modo semplificato. Se ho valori molto alti di media tutti sopra una soglia, io sottraggo la soglia da ogni valore, calcolo la media e poi alla fine sommo la soglia alla media.
+- ha fatto tutto un esempio lungo per dire che alla fine quello che posso fare per calcolare la media è sommare tutti i prodotti del xi per la sua frequenza assoluta / numero totale di osservazioni
+- ci possono spesso essere **outliers** oppure **valori fuori scala** che sminchiano tutto il nostro calcolo e le nostre valutazioni.
+
+### MEDIANA CAMPIONARIA
+- se ne sbatte i coglioni degli outlier
+- la mediana è il valore precisamente al centro del mio campione **ordinato**
+- se il valore è pari non ho un valore centrale bensi due quindi in quel caso bisogna **calcolare la media dei due valori**
+va bene per i dati di tipo **quantitativi e qualitativi**
+
+### MODA CAMPIONARIA
 
 
+## DISPERSIONE
+### VARIANZA CAMPIONARIA
+- Consideriamo:
+    - Campione A = {1,2,5,6,6}
+    - Campione B = {-40,0,5,20,35}
+
+- media campionaria A = 4
+- media campionaria B = 4
+- Entrambi i valori si concentrano su 4 ma si disperdono in modo completamente diverso
+- per calcolare la dispersione utilizziamo la formula della **varianza campionaria** (guarda la formula sul foglio oppure online, non so scriverla qua)
+-  **SCALABILITA** = Se voglio verificare la scalablità per un valore b, ottengo che la varianza campionaria scala come b^2
+- **TRASLAZIONE** = Invariata, la traslazione di valori del campione non comporta alcuna modifica con la varianza.
+- questa varianza, viene identificata con "s" e il suo valore ha come unita di misura quella base al quadrato. 
+- se voglio ottenere una vairanza con unita di misura uguale all'originale, calcolo la radice quadrata. Cosi facendo ottengo la **deviazione standard**
+
+### Deviazione Standard
+- **TRASLAZIONE** = Invariata
+- **SCALABILITA** = assoluto(b)*s
+
+### Coeff. di variazione
+
+s/abs(media)
+
+## PERCENTILE CAMPIONARIO
+- dipende dal "livello" p dove questo p è un numero che esprime una percentuale.
+- se al posto di percentuale, il livello lo esprimo in
+    - 0, ... ,1  -> parlo di **quantili**
+    - 0, ... ,4 ->  parlo di **quartili**
+    - 0, ... ,10 -> parlo di **decili**
+
+### BOX PLOT
+- rappresentazione grafica della centralita e la dispersione. Quest'ultima viene definita dal **range interquartle** che non è altro che la differenza tra il terzo ed il terzo e il primo quartile.

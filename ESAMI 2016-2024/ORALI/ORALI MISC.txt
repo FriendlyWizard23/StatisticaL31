@@ -1,0 +1,209 @@
+Prima persona:
+- Rivede la prova e decide da cosa iniziare in base agli errori fatti:
+    Cosa si intende per supporto di un modello esponenziale?
+    Il parametro del modello esponenziale dipende dal supporto?
+    Perché il parametro non può assumere un valore negativo?
+- Domanda su un grafico / esercizio sbagliato: dove ha sbagliato?
+- Reinterpretazione di una frase (da un esercizio) in termini di probabilità:
+    Se X misura la il tempo di vita di un hard disk in mese, come si traduce
+    "qual è la probabilità che tra un anno un hard disk funzioni ancora?"
+    Perché ha sbagliato a tradurlo?
+- Parla della distribuzione di Poisson.
+- Relazione tra il modello di Poisson e il modello binomiale.
+- Relazione tra il modello di Poisson e un altro modello (quello esponenziale, ma il prof non l'ha detto).
+- Quali sono le proprietà degli stimatori che abbiamo visto?
+- Cosa vuol dire che uno stimatore è non deviato?
+- Perché è buono che uno stimatore sia non deviato?
+- Disegna il grafico della funzione di ripartizione di una variabile aleatoria bernoulliana di parametro 1/2.
+- Proprietà della funzione di ripartizione per i modello discreti.
+- Cosa indica il valore assunto dalla funzione di ripartizione in un punto x?
+- Si riesce sul grafico disegnato a evidenziare la mediana della variabile aleatoria?
+
+
+Seconda persona:
+- Cosa si intende per attributo in un dataset?
+- Perché è buono che uno stimatore sia non deviato?
+- Come si interpreta il valore atteso di una variabile aleatoria?
+- Perché è sbagliato dire che il valore atteso di una variabile aleatoria è il valore più probabile che la variabile assuma?
+    Risposta: in un modello continuo la probabilità che la variabile assuma un valore preciso 0, in uno discreto non è detto
+    che il valore atteso sia osservabile.
+- Cosa vuol dire che uno stimatore è non deviato rispetto a un dato parametro?
+- In base a un esercizio: perché ha risposto no alla domanda
+    "lo stimatore della media campionaria è un buono stimatore per il valore atteso di popolazione e per la sua deviazione standard?"
+    Perché in un esercizio successivo ha detto che la deviazione stadard campionaria è un buono stimatore per la deviazione standard di popolazione?
+- Disegna il boxplot di un campione distribuito approssimativamente secondo un modello esponenziale?
+- Che cos'è lo skew?
+- Perché la distribuzione esponenziale dovrebbe avere uno skew verso destra e un quindi boxplot asimmetrico?
+- Che cos'è la distribuzione ipergeometrica?
+- Perché la funzione di massa di probabilità della distribuzione ipergeometrica assume quella forma e perché è corretta?
+- Quale principio viene applicato nel calcolare il numero di casi nella funzione di massa di probabilità della distribuzione ipergeometrica?
+    Risposta: il principio fondamentale del calcolo combinatorio.
+- Per una variabili ipergeometrica di parametri n = 10, N = 1 e M = 10 per quali valori è definita la funzione di massa di probabilità?
+    Risposta: quelli da 1 a N.
+
+
+Terza persona:
+- Per quale modello almeno uno dei suoi parametri può essere negativo?
+- Qual è la relazione tra il dominio di una variabile e i parametri della sua distribuzione?
+- Per quale modello il parametro indica il valore atteso della distribuzione, ma non appartiene al suo dominio?
+- X = x che cos'è?
+    Risposta: un evento.
+- Se T è uno stimatore pari al quadrato della media campionaria qual è il valore atteso di T?
+    Risposta: si utilizza la formula Var(X) = E[X^2] - E[X]^2 ricavando E[X^2], dove X è lo stimatore della media campionaria.
+- Il valore atteso di T è sigma^2 / n + mu^2; per cosa è non distorto?
+- Volendo utilizzare T per stimatore mu^2, T è distorto per mu^2 ma asintoticamente non distorto; come si dimostra se è consistente per mu^2?
+
+
+Quarta persona:
+- Perché è buono che uno stimatore sia non deviato rispetto a un dato parametro?
+    Risposta: perché i valori assunti dallo stimatore in questo modo sono centrati nel parametro.
+- Se uno stimatore è non deviato rispetto a un dato parametro significa che i valori che assume sono vicini al parametro?
+- Si dimostri che l'errore quadratico medio di uno stimatore rispetto a un parametro è pari alla varianza dello stimatore sommata
+al bias dello stimatore per il parametro.
+- Cosa rappresenta il bias di uno stimatore rispetto a un dato parametro?
+    Risposta: quanto si discostano in media i valori assunti dallo stimatore rispetto al parametro.
+- Da una risposta data a un esercizio: si dimostri che lo stimatore inverso rispetto alla media campionaria è non deviato rispetto
+    a un parametro lambda (che compariva nell'esercizio).
+    Risposta: non è possibile.
+- Calcola la mediana di un modello geometrico?
+    Non gli importa la risposta, perché non la conosciamo, ma il ragionamento.
+    Risposta: si sfrutta il fatto che la mediana è definita come il valore m tale che P(X <= m) = P(X >= m) -> P(X <= m) = 1/2.
+
+
+
+===============================================================================================================================================
+
+Orale-1
+
+1) Parlami dell'operazione di standardizzazione effettuata su una variabile casuale:
+	- Definizione di standardizzazione di una variabile aleatoria -> Ha detto media campionaria al posto di valore atteso
+	- Di quale campione calcolo la media campionaria? -> si rende conto di aver sbagliato
+	- Immaginiamo che la variabile di partenza sia bernoulliana di parametro p
+	- E' giusto dire che se la standardizzo diventerà una v.a Standard? Perchè non lo è?
+	- Qual è in generale l'effetto dell'operazione di standardizzazione? Far sì che il valore atteso sia 0 e la varianza sia 1
+	- Dimostralo per entrambi
+	- Cosa misure la varianza di una variabile aleatoria? Dispersione attorno a cosa?
+	- Cosa succede quando calcolo la variabile aleotoria traslata?
+
+2) Gaurdando lo scritto:
+	- Come si modella il problema della stima (introduci cosa si intende per popolazione, campione, quantità da stimare, stimatore)
+	  e applicalo alla stima della deviazione standard di una popolazione esponenziale.
+	- Che cos'è theta e cos'è tau di theta applicato alla stima della deviazione standard di una popolazione esponenziale
+	- Come posso stimare la deviazione standard in questo caso?
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Orale-2
+
+1) Prima domanda del primo esercizio: Indicata con X la v.a del numero di utenti che acquistano il servizio a pagamento qual è la distribuzione
+di probabilità più adeguata per questa v.a e perchè?
+	-Risposta: Binomiale -> spiega CHIARAMENTE il motivo
+	 
+2) Scrivi la funzione di masssa di probabilità di una binomiale e esplica il ragionamento per ottenerla
+3) Consideriamo una v.a che segue una distribuzione bernoulliana di parametro u. Disegna funzione di ripartizione segnando tutte le 
+   informazioni rilevanti.
+4) Che cos'è la funzione di ripartizione di una v.a?
+5) Quanto vale P(X <= 1/2)?
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Orale-3
+
+1) Sia la v.a G = r*X - (f*X + c) il guadagno totale dell'azienda. Se volessi calcolare la probabilità di guadagnare più di 2200 euro
+   dovresti calcolare la probabilità di quale evento? -> P(G >= 2200)
+
+2) Come facciamo a calcolare P(G >= 2200) senza sapere la distribuzione di G? Sì, ci riportiamo a P(X >= (2200 + c)/(r-f))
+3) Può includere 10,24 gli estremi della sommatoria? Dove ci fermiamo? A 10.
+4) C'è un evento che è più facile da gestire con la funzione di ripartizione? -> 1 - P(X <= 10)
+5) Formula funzione di massa di probabilità di un modello binomiale + spiegazione
+6) Cosa va a contare il modello binomiale?
+7) ???
+8) Come si modella il problema della stima (introduci cosa si intende per popolazione, campione, quantità da stimare, stimatore)
+   e applicalo alla stima della deviazione standard di una popolazione esponenziale.
+   Utilizziamo la media campionaria come stimatore. 
+
+9) La media campionaria è non deviato in questo caso? Sì
+10) Partendo da un dataset complicato, cosa vuol dire calcolare delle frequenze congiunte e delle frequenze marginali?
+
+
+=================================================================================================================================================================================================================================
+
+Orali giorno 01/03/2023
+
+[PRIMA PERSONA]
+
+- probabilità condizionata: dimmi tutto quello che sai trovando il giusto compromesso tra estrema prolissità ed imbarazzante silenzio.
+	- immagina di aver lanciato 3 volte una moneta non truccata. Sapendo che hai avuto almeno 2 volte testa, qual è la probabilità che sia uscito testa 3 volte?
+
+- immaginiamo di essere nel ambito della statistica inferenziale con un campione estratto da una popolazione descritta da un modello di poisson di parametro sconosciuto, se volessi stimare la varianza della popolazione che stimatore utilizzeresti?
+	* Risposta: Utilizzerei la varianza campionaria in quanto si tratta di uno stimatore non deviato per la varianza di popolazione
+	- Qual è il risvolto pratico, il vantaggio, di lavorare con uno stimatore che non è distorto?
+		*Risposta: lo stimatore è piu preciso, in quanto il suo valore atteso coincide con il valore che si vuole stimare
+
+- Disegna il grafico della funzione di ripartizione di una variabile aleatoria di Bernoulli indicandomi tutte le informazioni rilevanti
+ 	- se la variabile aleatoria definisse una popolazione in un problema di statistica descrittiva, qual è il primo grafico che disegneresti per ottenere altre informazioni sulla popolazione.
+		*Risposta: utilizzerei un grafico a barre/bastoncini in modo da determinare il numero di osservazioni per punto di massa.
+
+
+[SECONDA PERSONA]
+
+- Raccontami il significato dietro l'assenza di deviazione in una stima parametrica
+	- se ti dico che il valore atteso di una variabile aleatoria è 42, puoi dedurre che le osservazioni sono concentrate in questo valore?
+		* Risposta: no, sono centrate, non concentrate.
+
+- Stessa domanda sulla propabilità condizionata e sul lancio di una moneta della persona prima
+	- che cos'è una variabile aleatoria?
+	- se volessi introdurre una variabile aleatoria nel problema del lancio di una moneta, cosa dovrebbe misurare quest'ultima?
+		* Risposta: il numero di lanci in cui è uscito testa a fronte di tutti quelli effettuati
+	- Cosa sai dirmi su questa variabile aletoria?
+		* Risposta: Può essere modellata utilizzando una distribuzione di bernoulli di parametro p, dove p vale 0.5 dato che la moneta è non truccata.
+	- Quindi se voglio modellare 3 lanci quale modello dovrei usare, quale modello dovrei utilizzare e con quali parametri?
+		* Risposta: binomiale in quanto si tratta di una serie di esperimenti bernouliani, di parametro n=3 e p=0.5
+	- scrivi la funzione di massa di probabilità e calcola la probabilità nel caso la variabile aleatoria valga 3
+	- calcola il valore che la variabile aleatoria sia maggiore di 2
+
+- Immagina di avere un campione estratto da una popolazione binomiale, e di sapere i parametri di tale distribuzione. Dov'è ragionevole trovare la moda del campione?
+	* Risposta: Vicino al valore atteso della distribuzione
+	- Perchè è ragionevole aspettarsi che la media è la moda siano vicini nel caso di un modello binomiale?
+		* Risposta: perche il valore atteso coincide con l'asse di simmetria della distribuzione in cui è presente il valore massimo
+
+[ TERZA PERSONA ]
+
+- cosa afferma la proprietà di assenza di memoria del modello esponenziale?
+	- dimostrami la proprietà di assenza di memoria del modello esponenziale
+
+- Forma della funzione di ripartizione di un modello esponenziale
+
+- Supponi di avere un campione estratto da una popolazione che segue un modello esponenziale, quale stimatore utilizzeresti per stimare la deviazione standard?
+	*Risposta: utilizzerei la deviazione standard campionaria per stimare la deviazione standard della popolazione
+	- Cosa si può dire di questo stimatore o della sua stima?
+		*Risposta dello studente: si tratta di uno stimatore non deviato
+	- ah si? dimostramelo!
+		*Risposta: non è vero che la deviazione standard campionaria è uno stimatore non deviato per la deviazione standard di popolazione
+	- Perchè tra tutti gli stimatori mi hai proposto quello, perchè è sensato?
+		*Rispota: perchè la varianza campionaria è uno stimatore non distorto per la varianza di popolazione
+	
+
+[ QUARTA PERSONA ]
+
+- parlami del concetto di concentrazione
+	- Perchè è utile normalizzare un indice?
+
+- Che cos'è la covarianza?
+	- In che contesto abbiamo visto la covarianza, quando la usiamo?
+
+[ esercizi sul foglio ]
+
+
+[ QUINTA PERSONA ]
+
+- Come si crea un diagramma quantile-quantile?
+- Diciamo di aver calcolato i quantili del campione, che differenza c'è tra due quantili campionari?
+- che cos'è il quartile campionario?
+- cosa lega un quantile teorico con uno empirico?
+- Perchè l'operazione di standardizzazione di una variabile aleatoria normale ci permette di "fregarcene" del valore della media e della varianza?
+- cosa misura la varianza di una variabile aleatoria? 
+- quanto vale la differenza tra una varianza di una variabile aleatoria e una costante?
+- cosa succede alla variabile aleatoria normale se ci applichi una trasformazione lineare?
+- cosa significa che uno stimatore è consistente in media quadratica?
+- perchè è desiderabile che il valore del MSE tenda a zero?

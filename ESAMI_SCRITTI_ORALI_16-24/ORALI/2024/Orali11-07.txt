@@ -1,0 +1,26 @@
+Questi appunti sono stati presi in seguito agli orali dalla "memoria" dei
+sopravvissuti al temibile occhio di Malchiodi.
+Di seguito le domande ottenute dalla rimembranza dei senza luce:
+
+ORALE 1:
+- Disenare un boxplot di un'esponenziale
+- Il grafico della PDF di una esponenziale tocca l'asse delle y? In che punto?
+- per x che tende a zero la PDF va ad infinito?
+- il baffo sinistro di un boxplot dell'esponenziale corrisponde a zero? Perchè si / perchè no?
+- Vogliamo uno stimatore per delta, come si può fare? Sei in grado di farlo con le tue conoscenze e ottenerne uno non distorto?
+- Se volessiom invece uno stimatore per la mediana?
+
+ORALE 2:
+- Linearità del valore atteso: E(aX + b) = aE(X) + b [dimostrato]
+- Valore della media campionaria di una variabile aleatoria standardizzata di cui non si conosce la distribuzione: 1/n
+- Boxplot di quanto visto nella seconda domanda: non possibile da fare
+
+ORALE 3:
+-Grafico funzione di ripartizione di una bernoulliana
+- Valore di Fx in 1/3
+-Valore atteso di una  bernoulliana e come si può rappresentare negli assi del grafico della ripartizione 
+- stimatore per il valore atteso
+- domande sullo stimatore in generale
+-  i valori della stima sono tutti vicini al parametro sconosciuto(domanda formulata in modo diverso ma questo dovrebbe essere il senso)
+
+
